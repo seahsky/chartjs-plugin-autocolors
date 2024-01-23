@@ -76,8 +76,10 @@ export default {
         const background = [];
         const border = [];
         for (let i = 0; i < dataset.data.length; i++) {
-          background.push(c.background);
-          border.push(c.border);
+          if (typeof customize !== 'function') {
+            background.push(c.background);
+            border.push(c.border);
+          }
           c = getNext(gen, customize, {chart, datasetIndex: dataset.index, dataIndex: i});
         }
         setColors(dataset, background, border);
