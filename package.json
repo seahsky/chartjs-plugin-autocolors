@@ -1,6 +1,6 @@
 {
-  "name": "chartjs-plugin-autocolors",
-  "version": "0.2.2",
+  "name": "@seahsky/chartjs-plugin-autocolors",
+  "version": "0.2.3",
   "description": "Automatic color generation for Chart.js",
   "type": "module",
   "main": "dist/chartjs-plugin-autocolors.cjs",
@@ -30,7 +30,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kurkle/chartjs-plugin-autocolors.git"
+    "url": "git+https://github.com/seahsky/chartjs-plugin-autocolors.git"
   },
   "files": [
     "dist/*",
@@ -44,12 +44,12 @@
     "generator",
     "auto"
   ],
-  "author": "Jukka Kurkela <jukka.kurkela@gmail.com>",
+  "author": "Sky Seah <seahsky97@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kurkle/chartjs-plugin-autocolors/issues"
+    "url": "https://github.com/seahsky/chartjs-plugin-autocolors/issues"
   },
-  "homepage": "https://github.com/kurkle/chartjs-plugin-autocolors#readme",
+  "homepage": "https://github.com/seahsky/chartjs-plugin-autocolors#readme",
   "devDependencies": {
     "@kurkle/color": "^0.3.1",
     "@rollup/plugin-json": "^6.0.0",
