@@ -75,12 +75,19 @@ export default {
       } else {
         const background = [];
         const border = [];
+
+        if ((typeof customize !== 'function')) {
+          background.push(c.background);
+          border.push(c.border);
+        }
+
         for (let i = 0; i < dataset.data.length; i++) {
-          if (typeof customize !== 'function' || (typeof customize === 'function' && i > 0)) {
-            background.push(c.background);
-            border.push(c.border);
+          if ((chart.config.type === 'pie' && typeof customize === 'function') || (typeof customize !== 'function')) {
+            c = getNext(gen, customize, {chart, datasetIndex: dataset.index, dataIndex: i});
           }
-          c = getNext(gen, customize, {chart, datasetIndex: dataset.index, dataIndex: i});
+
+          background.push(c.background);
+          border.push(c.border);
         }
         setColors(dataset, background, border);
       }
