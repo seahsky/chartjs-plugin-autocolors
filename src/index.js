@@ -76,7 +76,7 @@ export default {
         const background = [];
         const border = [];
         for (let i = 0; i < dataset.data.length; i++) {
-          if (typeof customize !== 'function') {
+          if (i === 0 && typeof customize !== 'function') {
             background.push(c.background);
             border.push(c.border);
           }
