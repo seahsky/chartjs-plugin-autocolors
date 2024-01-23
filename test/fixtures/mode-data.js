@@ -23,6 +23,6 @@ module.exports = {
         }
       }
     },
-    plugins: [window['chartjs-plugin-autocolors']]
+    plugins: [window['@seahsky/chartjs-plugin-autocolors']]
   }
 };
